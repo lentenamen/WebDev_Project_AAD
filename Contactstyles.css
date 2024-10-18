@@ -1,145 +1,146 @@
 body {
-    margin: 0;
-    background-color: #ffd700;
-  }
-  
-  /*Code for the design of the banner*/
-  .banner {
-    background: #ff2400;
-    text-align: center;
-    animation: scrollBanner 15s linear infinite;
-    padding: 20px;
-  }
-  
-  .banner__content {
-    padding: 16px;
-  }
-
-  .navbar ul {
-    list-style-type: none;
-    background-color: white;
-    padding: 0px;
-    margin: 00px;
-    overflow: hidden;
+  margin: 0;
+  background-color: #ffd700;
 }
 
+/*Code for the design of the banner*/
+.banner {
+  background: #ff2400;
+  text-align: center;
+  animation: scrollBanner 15s linear infinite;
+  padding: 20px;
+}
+
+.banner__content {
+  padding: 16px;
+}
+
+/*all of the nav bar things*/
+/*color of navbar*/
+.navbar ul {
+  list-style-type: none;
+  background-color: white;
+  padding: 0px;
+  margin: 00px;
+  overflow: hidden;
+}
+/*color of letters and dist from edges*/
 .navbar a {
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
 }
-
+/*color that the navbar turns when you hover over it*/
 .navbar a:hover {
-    background-color: gray; 
+  background-color: gray;
 }
-
+/*floats the navbar to the left*/
 .navbar li {
-    float: left;
+  float: left;
 }
-
-  #img1{
-    float: right;
-    margin-top: 80px;
-    margin-right: 80px;
-    margin-left: 20px;
-    position:relative;
-  }
-
-  #img2{
-    float: right;
-    margin-top: 80px;
-    margin-right: 80px;
-    margin-left: 20px;
-    position:relative;
-  }
-
-  p{
-    text-indent: 40px;
-    font-family:sans-serif, Verdana;
-  }
-
-  
-.fa-brands.fa-youtube.fa-10x{
+/*distance img1 has from other elements*/
+#img1 {
+  float: right;
+  margin-top: 80px;
+  margin-right: 80px;
+  margin-left: 20px;
+  position: relative;
+}
+/*distance img2 has from other elements*/
+#img2 {
+  float: right;
+  margin-top: 80px;
+  margin-right: 80px;
+  margin-left: 20px;
+  position: relative;
+}
+/*text indent for paragraphs and font*/
+p {
+  text-indent: 40px;
+  font-family: sans-serif, Verdana;
+}
+/*logos*/
+.fa-brands.fa-youtube.fa-10x {
   color: red;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.fa-brands.fa-tiktok.fa-10x{
+.fa-brands.fa-tiktok.fa-10x {
   color: black;
 }
 
-.fa-brands.fa-twitter.fa-10x{
+.fa-brands.fa-twitter.fa-10x {
   color: turquoise;
 }
 
-.fa-brands.fa-discord.fa-10x{
+.fa-brands.fa-discord.fa-10x {
   color: hsl(253, 42%, 48%);
 }
 
-  footer{
-    padding: 20px;
-  }
-  .container
-  {
-    width: 1360px;
-    height: 500px;
-    background: #fff;
-    position: relative;
-    margin-top:50px;
-    margin-left:50px;
-  }
+footer {
+  position: fixed;
+  bottom: 50px;
+  padding: 20px;
+  left: 0;
+  right: 0;
+}
+/*how big and dist from other elements*/
+.container {
+  position: relative;
+  width: 1060px;
+  height: 500px;
+  background: #fff;
+  margin-bottom: 50;
+  border-radius: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*writing indentation for bigger titles*/
+h1 {
+  text-indent: 40px;
+  font-family: sans-serif, Verdana;
+}
+/*writing indentation for small titles*/
+h3 {
+  text-indent: 40px;
+  font-family: sans-serif, Verdana;
+}
 
-  h1{
-    text-indent: 40px;
-    font-family:sans-serif, Verdana;
-  }
-  
-  h3{
-    text-indent: 40px;
-    font-family:sans-serif, Verdana;
-  }
+/*This is the image size and position code*/
+.poo-img {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 65px;
+  left: 50px;
+}
 
+.all-img {
+  width: 800px;
+  height: 800px;
+  opacity: 0.5;
+}
 
-  /*This is the image size and position code*/
-  .poo-img {
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    top: 65px;
-    left: 50px;
-  }
-  
-  .all-img {
-    width: 800px;
-    height: 800px;
-    opacity: 0.5;
-  }
-  
-  .aof-img {
-    width: 600px;
-    height: 600px;
-    opacity: 0.5;
-  }
-  
-  .goku-img {
-    width: 700px; /* Adjust size */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute;
-    border-radius: 50px;
-    top: 150px; /* Adjust this value as needed */
-    left: 430px; /* Adjust this value as needed */
-    z-index: 2; /* Make sure it's above the other images */
-    opacity: 1; /* Adjust opacity if needed */
-  }
-  
-  /*This is the banner animation code (DONT TOUCH)*/
-  
-  @keyframes scrollBanner {
-    0% {
-      transform: translate(100%); /* Start off-screen */
-    }
-    100% {
-      transform: translate(-100%); /* End off-screen on the left */
-    }
-  }
+.aof-img {
+  width: 600px;
+  height: 600px;
+  opacity: 0.5;
+}
+
+.goku-img {
+  width: 700px; /* Adjust size */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  border-radius: 50px;
+  top: 150px; /* Adjust this value as needed */
+  left: 430px; /* Adjust this value as needed */
+  z-index: 2; /* Make sure it's above the other images */
+  opacity: 1; /* Adjust opacity if needed */
+}
