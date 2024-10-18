@@ -59,36 +59,45 @@ body {
   color: #ff2400;
 }
 
-.goku-img {
-  position: relative;
-  height: auto;
-  width: 700px;
-  border-radius: 50px;
-  top: -1300px;
-  left: 10px;
-  z-index: 2;
+/*This is the image size and position code*/
+.poo-img {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 65px;
+  left: 50px;
 }
 
 .all-img {
-  position: relative;
-  display: block;
-  height: 700px;
-  width: 700px;
-  margin-left: 0px;
+  width: 800px;
+  height: 800px;
   opacity: 0.5;
 }
 
 .aof-img {
-  position: relative;
-  display: block;
+  margin: 0 200px;
   width: 600px;
   height: 600px;
-  margin-right: 0px;
   opacity: 0.5;
 }
 
+.goku-img {
+  width: 700px;
+  height: auto;
+  position: absolute;
+  border-radius: 50px;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  opacity: 1;
+}
+
 .navbar ul {
-  background-color: #ffffff;
+  list-style-type: none;
+  background-color: #FFFFFF;
   padding: 0px;
   margin: 00px;
   overflow: hidden;
@@ -107,6 +116,6 @@ body {
 }
 /*floats the navbar to the left*/
 .navbar li {
-  display: inline-block;
-  margin-inline-start: 100px;
+  margin: 0 85px;
+  float: left;
 }
