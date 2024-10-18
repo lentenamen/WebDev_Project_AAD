@@ -116,6 +116,5 @@ body {
 }
 /*floats the navbar to the left*/
 .navbar li {
-  margin: 0 85px;
   float: left;
 }
