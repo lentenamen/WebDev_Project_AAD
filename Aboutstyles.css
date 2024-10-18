@@ -77,9 +77,14 @@ body {
   color: hsl(253, 42%, 48%);
 }
 
-  footer{
-    padding: 20px;
-  }
+}
+
+footer {
+  position: fixed;
+  bottom: 50px;
+  padding: 20px;
+  left: 0;
+  right: 0;
 }
 /*how big and dist from other elements*/
 .container {
