@@ -75,7 +75,8 @@ body {
 }
 
 .aof-img {
-  margin: 0 200px;
+  position: relative;
+  left: 550px;
   width: 600px;
   height: 600px;
   opacity: 0.5;
@@ -97,9 +98,9 @@ body {
 
 .navbar ul {
   list-style-type: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0px;
-  margin: 00px;
+  margin: 0px;
   overflow: hidden;
 }
 /*color of letters and dist from edges*/
@@ -116,5 +117,20 @@ body {
 }
 /*floats the navbar to the left*/
 .navbar li {
+  word-spacing: 30px;
   float: left;
+}
+
+.anime-list {
+  background-color: #ffffff;
+  word-spacing: 30px;
+}
+
+@keyframes scrollBanner {
+  0% {
+    transform: translate(100%); /* Start off-screen */
+  }
+  100% {
+    transform: translate(-100%); /* End off-screen on the left */
+  }
 }
