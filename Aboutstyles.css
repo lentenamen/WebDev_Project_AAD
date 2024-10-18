@@ -80,16 +80,20 @@ body {
   footer{
     padding: 20px;
   }
-  .container
-  {
-    width: 1360px;
-    height: 500px;
-    background: #fff;
-    position: relative;
-    margin-top:50px;
-    margin-left:50px;
-    margin-right:50px;
-  }
+}
+/*how big and dist from other elements*/
+.container {
+  position: relative;
+  width: 1060px;
+  height: 500px;
+  background: #fff;
+  margin-bottom: 50;
+  border-radius: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   h1{
     text-indent: 40px;
