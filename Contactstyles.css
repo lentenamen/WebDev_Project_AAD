@@ -40,14 +40,7 @@ body {
 .navbar li {
   float: left;
 }
-/*distance img1 has from other elements*/
-#img1 {
-  float: right;
-  margin-top: 80px;
-  margin-right: 80px;
-  margin-left: 20px;
-  position: relative;
-}
+
 /*distance img2 has from other elements*/
 #img2 {
   float: right;
