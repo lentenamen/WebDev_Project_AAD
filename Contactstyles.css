@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #ffd700;
+  overflow-x: hidden;
 }
 
 /*Code for the design of the banner*/
