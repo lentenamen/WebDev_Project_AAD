@@ -51,6 +51,8 @@ body {
 /*distance img2 has from other elements*/
 #img2 {
   float: right;
+  width: 60%;
+  height: auto;
   margin-top: 80px;
   margin-right: 80px;
   margin-left: 20px;
