@@ -40,12 +40,17 @@ body {
 .navbar li {
   float: left;
 }
-
+/*distance img1 has from other elements*/
+#img1 {
+  float: right;
+  margin-top: 80px;
+  margin-right: 80px;
+  margin-left: 20px;
+  position: relative;
+}
 /*distance img2 has from other elements*/
 #img2 {
   float: right;
-  width: 60%;
-  height: auto;
   margin-top: 80px;
   margin-right: 80px;
   margin-left: 20px;
@@ -85,15 +90,17 @@ footer {
   right: 0;
 }
 /*how big and dist from other elements*/
+
 .container {
-  width: 90%;
-  max-width: 1060px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
+    width: 90%;
+    max-width: 1060px;
+    height: 620px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
 }
-}
+
 /*writing indentation for bigger titles*/
 h1 {
   text-indent: 40px;
