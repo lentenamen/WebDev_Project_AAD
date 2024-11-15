@@ -69,16 +69,16 @@ body {
 }
 
 .all-img {
-  width: 50%;
-  height: auto;
+  width: 800px;
+  height: 800px;
   opacity: 0.5;
 }
 
 .aof-img {
-  position: relative;
+    position: relative;
   left: 550px;
-  width: 50%;
-  height: auto;
+  width: 600px;
+  height: 600px;
   opacity: 0.5;
 }
 
