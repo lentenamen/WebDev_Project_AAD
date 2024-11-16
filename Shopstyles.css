@@ -1,0 +1,135 @@
+/* reset margins and paddings for everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fix the body style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffd700;
+  overflow-x: hidden; /* no horizontal scrolling */
+  margin: 0;
+}
+
+/* style the banner */
+.banner {
+  background: #ff2400;
+  text-align: center;
+  animation: scrollBanner 15s linear infinite;
+  padding: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+/*color of letters and dist from edges*/
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+/*color that the navbar turns when you hover over it*/
+.navbar a:hover {
+  background-color: gray;
+}
+/*floats the navbar to the left*/
+.navbar li {
+  word-spacing: 30px;
+  float: left;
+}
+
+/* shop container style */
+.shop-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.shop-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* grid layout for the products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; /* spacing between items */
+  justify-items: center;
+  padding: 0 10px;
+}
+
+/* style each product card */
+.product-card {
+  background: white;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 200px; /* prevent stretching */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #ff2400;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-card button:hover {
+  background-color: #ff0000;
+}
+
+
+footer {
+  background-color: #ffffff;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-content p {
+  margin: 5px 0;
+}
+
+/* banner animation */
+@keyframes scrollBanner {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+/* no spacing */
+html {
+  overflow-x: hidden;
+}
