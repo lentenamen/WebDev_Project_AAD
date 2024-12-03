@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <!-- banner -->
+    <div class="banner">Welcome to the website</div>
+
+    <!--navbar-->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Aboutindex.html">About-Us</a></li>
+        <li><a href="Contactindex.html">Contact-Us</a></li>
+        <li><a href="">Spoiler Calendar</a></li>
+        <li><a href="Shopindex.html">Shop</a></li>
+        <li><a href="">Sign-In</a></li>
+        <li><a href="">Sign-Up</a></li>
+      </ul>
+    </nav>
+
+    <script src="./script.js"></script>
+
+    <!-- eye catching menu -->
+    <div class="themenu">
+      <h1>If you wish to contact us, enter your info below!</h1>
+    </div>
+
+    <div class="container">
+      <form
+        name="myForm"
+        action=""
+        onsubmit="return validateForm()"
+        method="post"
+      >
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="John Doe"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Email</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="John Doe@example.ie.."
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="conM">Preferred Contact method</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="australia">Email</option>
+              <option value="canada">Phone</option>
+              <option value="usa">None</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <!-- popping animes + add more if you want esp mangas too -->
+    <div class="sec">
+      <h2>Popular Animes</h2>
+    </div>
+
+    <!-- home images -->
+    <img src="" class="" alt="" />
+
+    <img src="" class="" alt="" />
+  </body>
+</html>
 
