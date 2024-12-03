@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
   background-color: #ffd700;
 }
 
@@ -15,97 +16,119 @@ body {
   padding: 16px;
 }
 
-/*all of the nav bar things*/
-/*color of navbar*/
-.navbar ul {
-  list-style-type: none;
-  background-color: white;
-  padding: 0px;
-  margin: 00px;
-  overflow: hidden;
-}
-/*color of letters and dist from edges*/
-.navbar a {
-  color: black;
-  text-decoration: none;
-  padding: 15px;
-  display: block;
+/* Eye catch (read watch calender + add more if u want) */
+.themenu {
   text-align: center;
-}
-/*color that the navbar turns when you hover over it*/
-.navbar a:hover {
-  background-color: gray;
-}
-/*floats the navbar to the left*/
-.navbar li {
-  float: left;
+  margin-top: 20px;
 }
 
-/*distance img2 has from other elements*/
-#img2 {
+.themenu h1 {
+  font-size: 3em;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*The following is selecting all components and setting the box-sizing property to border-box to make sure padding and border are included in the total width and height of the elements.*/
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  /*the following allows resizing on vertical orientation*/
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #0704aa;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  /*the following changes the cursor type*/
+  cursor: pointer;
   float: right;
-  width: 60%;
-  height: auto;
-  margin-top: 80px;
-  margin-right: 80px;
-  margin-left: 20px;
-  position: relative;
-}
-/*text indent for paragraphs and font*/
-p {
-  text-indent: 40px;
-  font-family: sans-serif, Verdana;
-}
-/*logos*/
-.fa-brands.fa-youtube.fa-10x {
-  color: red;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.fa-brands.fa-tiktok.fa-10x {
-  color: black;
+input[type="submit"]:hover {
+  background-color: #0026ff;
 }
 
-.fa-brands.fa-twitter.fa-10x {
-  color: turquoise;
-}
-
-.fa-brands.fa-discord.fa-10x {
-  color: hsl(253, 42%, 48%);
-}
-
-footer {
-  position: fixed;
-  bottom: 50px;
-  padding: 20px;
-  left: 0;
-  right: 0;
-}
-/*how big and dist from other elements*/
 .container {
-  position: relative;
-  width: 1060px;
-  height: 500px;
-  background: #fff;
-  margin-bottom: 50;
-  border-radius: 50px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 20px;
+  outline: #ff2400;
+  background-color: #ffd54a;
+  padding: 80px;
 }
-/*writing indentation for bigger titles*/
-h1 {
-  text-indent: 40px;
-  font-family: sans-serif, Verdana;
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
-/*writing indentation for small titles*/
-h3 {
-  text-indent: 40px;
-  font-family: sans-serif, Verdana;
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Anime section (popping animes + add others if u want and mangas too) */
+.sec {
+  text-align: center;
+  margin-top: 500px;
+}
+
+.sec h2 {
+  font-size: 2em;
+  color: #ff2400;
+}
+
+.anime-list {
+  list-style: none;
+  padding: 0;
+}
+
+.anime-list li {
+  display: inline-block;
+}
+
+.anime-list a {
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+}
+
+.anime-list a:hover {
+  color: #ff2400;
 }
 
 /*This is the image size and position code*/
@@ -124,20 +147,55 @@ h3 {
 }
 
 .aof-img {
+  position: relative;
+  left: 550px;
   width: 600px;
   height: 600px;
   opacity: 0.5;
 }
 
 .goku-img {
-  width: 700px; /* Adjust size */
-  height: auto; /* Maintain aspect ratio */
+  width: 700px;
+  height: auto;
   position: absolute;
   border-radius: 50px;
-  top: 150px; /* Adjust this value as needed */
-  left: 430px; /* Adjust this value as needed */
-  z-index: 2; /* Make sure it's above the other images */
-  opacity: 1; /* Adjust opacity if needed */
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  opacity: 1;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+/*color of letters and dist from edges*/
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+/*color that the navbar turns when you hover over it*/
+.navbar a:hover {
+  background-color: gray;
+}
+/*floats the navbar to the left*/
+.navbar li {
+  word-spacing: 30px;
+  float: left;
+}
+
+.anime-list {
+  background-color: #ffffff;
+  word-spacing: 30px;
 }
 
 @keyframes scrollBanner {
@@ -147,3 +205,4 @@ h3 {
   100% {
     transform: translate(-100%); /* End off-screen on the left */
   }
+}
